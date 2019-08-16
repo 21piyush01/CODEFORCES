@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std ;
+
+#define fr freopen("input.txt","r",stdin)
+#define fw freopen("output.txt","w",stdout)
+#define MOD 1000000007
+#define MAX 1000003
+
+typedef long long int ll ;
+typedef pair<int, int> ii ;
+vector<int> points ;
+vector<ii> v ;
+
+int main()
+{
+  ios_base::sync_with_stdio(false) ;
+  cin.tie(NULL) ;   
+  long long int n,m,i,j,k,x=0,y=0,z=1 ;
+  string s ; char c ;
+  cin >> n ;
+  int A[n] ;
+  for(i=0;i<n;i++)
+  { cin >> A[i] ; }	
+  sort(A,A+n) ;
+  for(i=0;i<n;i++)
+  {
+    if(A[i]==z)
+    { z++ ; }	
+  }	
+  cout << z << endl ;
+  return 0 ;	
+}
